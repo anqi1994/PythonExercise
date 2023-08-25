@@ -11,3 +11,4 @@ radius = float(input("Enter the radius "))
 areaCircle = math.pi * radius ** 2
 # the same as radius * radius
 print(f"Area of circle {areaCircle:.2f}")
+print("hello world")
