@@ -8,4 +8,4 @@ elif cc == "B":
 elif cc == "C":
     print("Windowless cabin below the car deck.")
 else:
-    print("Invalid cabin class")
+    print("Invalid cabin class, please enter LUX, A, B, or C.")
