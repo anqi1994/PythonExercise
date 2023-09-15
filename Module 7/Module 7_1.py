@@ -5,7 +5,7 @@ autumn = ("September", "October", "November")
 winter = ("December", "January", "February")
 
 if month in spring:
-    print("It is spring.")
+    print(f"{month} is in spring.")
 elif month in summer:
     print("It is summer.")
 elif month in autumn:
