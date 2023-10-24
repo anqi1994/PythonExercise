@@ -21,4 +21,5 @@ class Elevator:
 
 h = Elevator(2, 9)
 h.go_to_floor(7)
+h.go_to_floor(2)
 
