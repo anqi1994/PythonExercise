@@ -1,4 +1,6 @@
 import random
+from tabulate import tabulate
+
 class Car:
     def __init__(self, regisnum, maxsp=0, cursp=0, tradis=0):
         self.regisnum = regisnum
@@ -34,6 +36,9 @@ while drivegoal == False:
         if car.tradis >= 10000:
             drivegoal = True
 
-for car in carlist:
-    print(car.regisnum, car.maxsp, car.tradis)
+data = []
+for index, car in enumerate(carlist):
+    data.append((index+1, car.regisnum, car.maxsp, car.tradis))
 
+table = tabulate(data, headers=["Number", "Register Number", "Max Speed", "Travel Distance"], tablefmt="grid")
+print(table)
