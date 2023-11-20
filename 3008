@@ -1,0 +1,14 @@
+x = float(input("How much money do you have? \n"))
+asw = input("Can I look into your wallet (y/n)?")
+#str = "You have {} cash"
+#print(str.format(x))
+#print(f"You said that your have {x} euro.")
+
+if( x>10000 and asw == "y"):
+    print("You rich b**tard!")
+elif( x>10 ):
+        print("You have more than 10 euros")
+
+
+else:
+    print("You poor ba**tard!")

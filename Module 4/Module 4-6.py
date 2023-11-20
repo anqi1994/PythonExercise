@@ -6,7 +6,7 @@ n_all = 0
 ran1 = []
 ran2 = []
 while True:
-    if n_all < 10000000:
+    if n_all < 1000000:
         if randf1 ** 2 + randf2 ** 2 < 1:
             n = n + 1
             n_all = n_all + 1

@@ -20,3 +20,4 @@ except:
     print("value error")
 
 
+pro([1,2,3,4])
