@@ -8,6 +8,7 @@ connection = mysql.connector.connect(
     autocommit=True
 )
 
+
 def getAirportInformation(code):
     sql = "SELECT name, municipality FROM airport"
     sql +=" WHERE ident = '"+code+"'"

@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+
 def calculate_prime(number):
     if number <= 2:
         return False
@@ -14,11 +15,11 @@ def calculate_prime(number):
 @app.route('/prim_number/<int:number>', methods=['GET'])
 def check_prime_number(number):
     result = {
-        "Number":number,
-        "calculatePrime":calculate_prime(number)
+        "Number": number,
+        "calculatePrime": calculate_prime(number)
     }
     return jsonify(result)
 
 
-__name__ = '__main__'
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
